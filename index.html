@@ -10,499 +10,152 @@
 
   gtag('config', 'G-26WCK5LB5L');
 </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MooZa.Recycle - Turn Bottles into Rewards 🐷</title>
-    <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=g7gCktaAZS-viI_UIURl24UlwPZv2YarsOjABLMmGU0gAuO6yw6ITgzW7rIyZ5FAcWvI9If3uveA3HSR4g78_iB727v_aZ8r7SnwX6_jiy7M_w4Eu5mv_w4krNJhMvY9_Tcx9ewu4dahgiR930uXIB7KqzKKHzlPvpMmWFFjcrO1WQ-cLSD7agaXmSWFhD6H0VtTf82OyusDFw1Z_FYkYvpnkpHy4OpB2YiejX5Uu5WaX1zwgv4stGnauLny-lsQ" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://me.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9wcGwtYWktY29kZS1pbnRlcnByZXRlci1maWxlcy5zMy5hbWF6b25hd3MuY29tL3dlYi9kaXJlY3QtZmlsZXMvMDU1YzY4OTcxYzFlYTg3ODI4NzllNDM2OTA2N2JmOWQvNWRkNmQ3MDMtM2M2NS00OTk0LTkxY2EtMDBmN2ViZTc2MGI3L2NhbnZhcy1hcHAvaW5kZXguaHRtbA"/><style>
-        :root {
-            --color-primary: #32B8C6;
-            --color-primary-dark: #1D7480;
-            --color-bg: #FCFCF9;
-            --color-surface: #FFFFFE;
-            --color-text: #134252;
-            --color-text-light: #626C71;
-            --color-success: #21808D;
-            --color-pig-pink: #FFB6C8;
-            --color-pig-dark: #FF8FA8;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: var(--color-bg);
-            color: var(--color-text);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-            padding: 20px;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            width: 300px;
-            height: 300px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            top: -100px;
-            right: -100px;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            width: 400px;
-            height: 400px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 50%;
-            bottom: -150px;
-            left: -150px;
-        }
-
-        .hero-content {
-            text-align: center;
-            max-width: 800px;
-            z-index: 2;
-            animation: fadeInUp 0.8s ease;
-        }
-
-        .mascot {
-            font-size: 120px;
-            margin-bottom: 20px;
-            animation: bounce 2s infinite;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            color: white;
-            margin-bottom: 20px;
-            font-weight: 700;
-            line-height: 1.2;
-        }
-
-        .hero .tagline {
-            font-size: 1.5rem;
-            color: rgba(255, 255, 255, 0.95);
-            margin-bottom: 30px;
-            font-weight: 400;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 18px 45px;
-            background: white;
-            color: var(--color-primary);
-            text-decoration: none;
-            border-radius: 50px;
-            font-size: 1.2rem;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-        }
-
-        .hero-subtitle {
-            color: rgba(255, 255, 255, 0.85);
-            font-size: 1rem;
-            margin-top: 20px;
-        }
-
-        /* How It Works Section */
-        .section {
-            padding: 80px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 60px;
-            color: var(--color-text);
-            font-weight: 700;
-        }
-
-        .steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 40px;
-            margin-top: 40px;
-        }
-
-        .step {
-            background: var(--color-surface);
-            padding: 35px;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
-
-        .step:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-            border-color: var(--color-primary);
-        }
-
-        .step-icon {
-            font-size: 4rem;
-            margin-bottom: 20px;
-        }
-
-        .step-number {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            background: var(--color-primary);
-            color: white;
-            border-radius: 50%;
-            line-height: 40px;
-            font-weight: 700;
-            margin-bottom: 15px;
-        }
-
-        .step h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: var(--color-text);
-        }
-
-        .step p {
-            color: var(--color-text-light);
-            line-height: 1.7;
-        }
-
-        /* Impact Counter Section */
-        .impact {
-            background: linear-gradient(135deg, #21808D 0%, #1A6873 100%);
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        .impact-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            max-width: 1000px;
-            margin: 50px auto 0;
-        }
-
-        .stat {
-            padding: 30px;
-        }
-
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-            display: block;
-            color: var(--color-pig-pink);
-        }
-
-        .stat-label {
-            font-size: 1.1rem;
-            opacity: 0.95;
-        }
-
-        .impact-note {
-            margin-top: 40px;
-            font-size: 0.95rem;
-            opacity: 0.85;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* Signup Section */
-        .signup {
-            background: var(--color-surface);
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        .signup-form {
-            max-width: 500px;
-            margin: 40px auto 0;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        input {
-            width: 100%;
-            padding: 16px 20px;
-            border: 2px solid rgba(var(--color-primary), 0.2);
-            border-radius: 12px;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            background: var(--color-bg);
-        }
-
-        input:focus {
-            outline: none;
-            border-color: var(--color-primary);
-            box-shadow: 0 0 0 4px rgba(50, 184, 198, 0.1);
-        }
-
-        button[type="submit"] {
-            width: 100%;
-            padding: 18px;
-            background: var(--color-primary);
-            color: white;
-            border: none;
-            border-radius: 12px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        button[type="submit"]:hover {
-            background: var(--color-primary-dark);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(50, 184, 198, 0.3);
-        }
-
-        .success-message {
-            display: none;
-            background: #d4edda;
-            color: #155724;
-            padding: 15px;
-            border-radius: 12px;
-            margin-top: 20px;
-        }
-
-        /* Social Section */
-        .social {
-            background: var(--color-bg);
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .social-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 15px 35px;
-            background: linear-gradient(135deg, #E1306C 0%, #C13584 100%);
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-size: 1.2rem;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            margin-top: 20px;
-        }
-
-        .social-link:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(225, 48, 108, 0.3);
-        }
-
-        /* Footer */
-        footer {
-            background: var(--color-text);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        footer p {
-            opacity: 0.8;
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes bounce {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero .tagline {
-                font-size: 1.2rem;
-            }
-
-            .mascot {
-                font-size: 80px;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .steps {
-                grid-template-columns: 1fr;
-            }
-
-            .stat-number {
-                font-size: 2.5rem;
-            }
-        }
-    </style>
+   
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+<meta name="description" content="MooZa.Recycle - Turn your waste into rewards. Bin. Earn. Win.">
+<title>MooZa.Recycle - Bin. Earn. Win.</title>
+<style>*{box-sizing:border-box;margin:0;padding:0}html{font-size:14px;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent;scroll-behavior:smooth}body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.4;color:#1a1a1a;background:#f8f9fa;overflow-x:hidden}.container{width:100%;padding:0 12px}.hero{min-height:80vh;display:flex;align-items:center;justify-content:center;text-align:center;background:#32B8C6;color:#fff;padding:20px 12px}.mascot{font-size:3rem;display:inline-block;animation:f 3s ease-in-out infinite;will-change:transform}@keyframes f{50%{transform:translateY(-10px)}}.hero h1{font-size:1.75rem;font-weight:700;margin:12px 0 8px}.tagline{font-size:1.1rem;font-weight:600;margin-bottom:20px}.cta-primary{display:inline-block;padding:12px 24px;background:#FFB6C8;color:#1a1a1a;text-decoration:none;border-radius:8px;font-weight:700;font-size:1rem;min-height:48px;line-height:1.2;touch-action:manipulation}.cta-primary:active{opacity:.8}.section{padding:24px 0}.section-title{font-size:1.5rem;font-weight:700;text-align:center;margin-bottom:20px;color:#1D7480}.how-it-works,.prizes,.submit-entry{background:#fff}.steps{display:flex;flex-direction:column;gap:16px}.step{background:#f8f9fa;padding:16px;border-radius:8px;border-left:3px solid #32B8C6}.step-number{display:inline-block;width:28px;height:28px;background:#32B8C6;color:#fff;border-radius:50%;text-align:center;line-height:28px;font-weight:700;margin-bottom:8px;font-size:.9rem}.step h3{font-size:1rem;margin-bottom:6px;color:#1D7480}.step p{font-size:.9rem;color:#555}.impact{background:#FFB6C8;color:#1a1a1a}.stats{display:flex;flex-direction:column;gap:12px}.stat{background:#fff;padding:16px;border-radius:8px;text-align:center}.stat-icon{font-size:1.5rem;margin-bottom:6px}.stat strong{display:block;font-size:1.1rem;color:#1D7480;margin-bottom:4px}.stat p{font-size:.85rem;color:#555}.chances{background:#fff5e6;border-left:4px solid #FFB6C8;padding:20px 16px}.chances h2{color:#1D7480;margin-bottom:12px}.chances-list{list-style:none}.chances-list li{padding:8px 0;padding-left:28px;position:relative;font-size:.95rem}.chances-list li:before{content:"🎫";position:absolute;left:0}.submit-section{text-align:center;padding:32px 12px}.submit-section .cta-primary{font-size:1.1rem;padding:14px 32px}.terms{background:#fffbea;border:2px solid #FFB6C8;padding:16px;border-radius:8px;margin:20px 0}.terms h3{color:#1D7480;margin-bottom:12px;font-size:1.1rem}.terms ul{margin-left:20px;font-size:.9rem;line-height:1.6}.terms li{margin-bottom:8px}.toggle-btn{background:#32B8C6;color:#fff;border:none;padding:10px 20px;border-radius:6px;cursor:pointer;font-size:.9rem;margin:8px 4px;min-height:44px;min-width:44px;touch-action:manipulation}.toggle-btn:active{opacity:.8}.toggle-content{display:none;margin-top:12px;padding:16px;background:#f8f9fa;border-radius:6px;font-size:.85rem;line-height:1.6;max-height:400px;overflow-y:auto}.toggle-content.active{display:block}.toggle-content h4{margin:12px 0 8px;color:#1D7480}.footer{background:#1D7480;color:#fff;padding:24px 12px;text-align:center}.footer p{margin:8px 0;font-size:.9rem}.footer a{color:#FFB6C8;text-decoration:none}.footer a:active{opacity:.8}.social-links{margin:16px 0}.social-btn{display:inline-block;padding:10px 20px;background:#32B8C6;color:#fff;text-decoration:none;border-radius:6px;font-size:.9rem;margin:4px;min-height:44px;line-height:1.4;touch-action:manipulation}.social-btn:active{opacity:.8}@media(min-width:640px){.hero h1{font-size:2.5rem}.tagline{font-size:1.3rem}.section-title{font-size:2rem}.steps{flex-direction:row;flex-wrap:wrap}.step{flex:1 1 calc(50% - 8px)}}</style>
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <div class="mascot">🐷</div>
-            <h1>Bin. Earn. Win.</h1>
-            <p class="tagline">Turn your plastic bottles into exciting rewards</p>
-            <a href="https://forms.gle/Cnt5nofX57w5TzP76" class="cta-button" target="_blank">Join the Movement</a>
-            <p class="hero-subtitle">🌍 Every bottle counts. Every action matters.</p>
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section class="section">
-        <h2 class="section-title">Make an Impact. Win Rewards.</h2>
-        <p style="text-align: center; font-size: 1.1rem; color: var(--color-text-light); max-width: 700px; margin: 0 auto 40px;">Recycling one PET bottle saves enough energy to power a 60-watt bulb for 6 hours and significantly reduces carbon emissions. With 300 million tons of plastic waste generated globally each year, every bottle you recycle helps fight pollution and protect our planet.</p>
-        
-        <h3 style="text-align: center; font-size: 1.8rem; margin-bottom: 40px; color: var(--color-primary); font-weight: 700;">Bin. Earn. Win.</h3>
-        <p style="text-align: center; font-size: 1.2rem; margin-bottom: 40px; color: var(--color-text);">Dispose of your bottle properly and get a chance to win ₹500 every Friday!</p>
-        
-        <div class="steps">
-            <div class="step">
-                <div class="step-number">1</div>
-                <div class="step-icon">♻️</div>
-                <h3>Recycle Your Bottle</h3>
-                <p>Dispose of your PET bottle in the proper recycling bin or collection point.</p>
-            </div>
-            <div class="step">
-                <div class="step-number">2</div>
-                <div class="step-icon">📝</div>
-                <h3>Fill Out the Form</h3>
-                <p>Complete our simple submission form with your details.</p>
-            </div>
-            <div class="step">
-                <div class="step-number">3</div>
-                <div class="step-icon">📹</div>
-                <h3>Upload Your Video</h3>
-                <p>Share a video of you recycling the bottle as proof of participation.</p>
-            </div>
-            <div class="step">
-                <div class="step-number">4</div>
-                <div class="step-icon">🎁</div>
-                <h3>Win ₹500 Every Friday</h3>
-                <p>Enter the weekly lucky draw—one winner takes home ₹500 every Friday!</p>
-            </div>
-        </div>
-        
-        <p style="text-align: center; font-size: 1.1rem; margin-top: 50px; color: var(--color-text); font-weight: 500;">Your small action creates a big impact. Start recycling today!</p>
-    </section>
-
-    <!-- Impact Section -->
-    <section class="impact">
-        <h2 class="section-title" style="color: white;">Your Impact Matters</h2>
-        <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 20px;">When you recycle just ONE plastic bottle, here's the difference you make:</p>
-        
-        <div class="impact-stats">
-            <div class="stat">
-                <span class="stat-number">0.6 kg</span>
-                <span class="stat-label">CO₂ Emissions Reduced</span>
-            </div>
-            <div class="stat">
-                <span class="stat-number">75%</span>
-                <span class="stat-label">Less Energy Used</span>
-            </div>
-            <div class="stat">
-                <span class="stat-number">6x</span>
-                <span class="stat-label">Water Saved</span>
-            </div>
-        </div>
-        
-        <p class="impact-note">🌊 India already recycles 95% of PET bottles - one of the highest rates globally. Let's make it 100% together!</p>
-    </section>
-
-    <!-- Signup Section -->
-    <section class="signup" id="signup">
-        <h2 class="section-title">Ready to Make a Difference?</h2>
-        <p style="font-size: 1.2rem; color: var(--color-text-light); margin-bottom: 30px;">Fill out the form and upload your recycling video to enter this week's lucky draw!</p>
-        
-        <a href="https://forms.gle/Cnt5nofX57w5TzP76" class="cta-button" target="_blank" style="margin-bottom: 40px;">📝 Submit Your Entry</a>
-        
-        <div style="max-width: 700px; margin: 50px auto 0; padding: 30px; background: #FFF9E6; border-left: 4px solid var(--color-primary); border-radius: 12px; text-align: left;">
-            <h3 style="font-size: 1.3rem; margin-bottom: 20px; color: var(--color-text);">📋 Terms & Conditions</h3>
-            <ul style="line-height: 2; color: var(--color-text-light); font-size: 0.95rem; padding-left: 20px;">
-                <li><strong>Data Usage:</strong> By submitting your entry, you grant us permission to use your submitted video and data for promotional purposes, including posting on our social media platforms (Facebook, Instagram, etc.).</li>
-                <li><strong>Winner Notification:</strong> After every Friday lucky draw, the winner will be contacted via phone or email within 48 hours.</li>
-                <li><strong>Prize Claim:</strong> Winners must provide the required details (such as UPI ID, full name, and contact information) to receive their ₹500 reward.</li>
-                <li><strong>Claim Deadline:</strong> Prizes must be claimed within 7 days of winner notification. If not claimed within this period, you forfeit your right to the prize, and a new winner may be selected.</li>
-                <li><strong>Eligibility:</strong> Participants must provide valid proof of recycling.</li>
-                <li><strong>Verification:</strong> All submissions are subject to verification. Invalid or fraudulent entries will be disqualified.</li>
-            </ul>
-            <p style="margin-top: 20px; font-size: 0.9rem; color: var(--color-text-light); font-style: italic;">By participating, you agree to these terms and conditions.</p>
-        </div>
-    </section>
-
-    <!-- Social Section -->
-    <section class="social">
-        <h2 class="section-title">Follow Our Journey</h2>
-        <p style="font-size: 1.1rem; color: var(--color-text-light); margin-bottom: 10px;">Join our community and stay updated on Instagram</p>
-        <a href="https://instagram.com/mooza.recycle" class="social-link" target="_blank">
-            📱 @MooZa.Recycle
-        </a>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 MooZa.Recycle - Making Recycling Rewarding</p>
-        <p style="margin-top: 20px; font-size: 0.85rem;">Every bottle recycled is a step toward a cleaner planet.</p>
-    </footer>
-
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-    </script>
+<div class="hero">
+<div class="container">
+<div class="mascot">🐷</div>
+<h1>MooZa.Recycle</h1>
+<p class="tagline">Bin. Earn. Win.</p>
+<a href="https://forms.gle/Cnt5nofX57w5TzP76" class="cta-primary">Join the Movement</a>
+</div>
+</div>
+<section class="section impact">
+<div class="container">
+<h2 class="section-title">Why One Bottle Matters</h2>
+<div class="stats">
+<div class="stat">
+<div class="stat-icon">⚡</div>
+<strong>Powers a 60W bulb for 6 hours</strong>
+<p>Energy saved from recycling one bottle</p>
+</div>
+<div class="stat">
+<div class="stat-icon">🌍</div>
+<strong>Reduces 0.6kg CO₂</strong>
+<p>Greenhouse gas emissions prevented</p>
+</div>
+<div class="stat">
+<div class="stat-icon">💧</div>
+<strong>75% energy savings</strong>
+<p>Compared to producing new plastic</p>
+</div>
+<div class="stat">
+<div class="stat-icon">🛢️</div>
+<strong>Conserves petroleum</strong>
+<p>Saves valuable natural resources</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section how-it-works">
+<div class="container">
+<h2 class="section-title">How to Enter the Competition</h2>
+<div class="steps">
+<div class="step">
+<span class="step-number">1</span>
+<h3>♻️ Dispose Your Bottle</h3>
+<p>Dispose of your PET bottle in a public garbage bin</p>
+</div>
+<div class="step">
+<span class="step-number">2</span>
+<h3>📝 Fill the Form</h3>
+<p>Complete our simple online submission form</p>
+</div>
+<div class="step">
+<span class="step-number">3</span>
+<h3>📹 Upload Video Proof</h3>
+<p>Share a video showing you disposing the bottle</p>
+</div>
+<div class="step">
+<span class="step-number">4</span>
+<h3>🎉 Enter the Draw</h3>
+<p>Automatically entered in Friday's ₹500 lucky draw</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="chances">
+<h2>🎫 Increase Your Chances</h2>
+<ul class="chances-list">
+<li><strong>1 entry = 1 ticket</strong> in the weekly draw</li>
+<li><strong>Submit multiple entries</strong> to increase your odds</li>
+<li><strong>Each bottle recycled</strong> = 1 additional entry</li>
+<li><strong>No limit</strong> on entries per person</li>
+<li><strong>More bottles = Higher chance</strong> to win ₹500</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="section submit-entry">
+<div class="container submit-section">
+<h2 class="section-title">Ready to Make an Impact?</h2>
+<a href="https://forms.gle/Cnt5nofX57w5TzP76" class="cta-primary">Submit Your Entry</a>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="terms">
+<h3>⚖️ Terms & Conditions</h3>
+<button class="toggle-btn" onclick="document.getElementById('terms-content').classList.toggle('active')">View Terms</button>
+<div id="terms-content" class="toggle-content">
+<p><strong>By participating in MooZa.Recycle, you agree to:</strong></p>
+<ul>
+<li><strong>Data Usage Consent:</strong> You grant MooZa.Recycle permission to use your submitted videos, images, and data for promotional purposes on social media platforms including Facebook, Instagram, and other marketing channels.</li>
+<li><strong>Prize Distribution:</strong> Winners will be contacted within 48 hours of the weekly draw via the contact information provided in the submission form.</li>
+<li><strong>Prize Claim Requirements:</strong> Winners must provide valid identification and UPI ID details as requested to receive the ₹500 prize money.</li>
+<li><strong>Claim Deadline:</strong> Prizes must be claimed within 7 days of winner notification. Failure to respond or provide required details within this period will result in forfeiture of the prize.</li>
+<li><strong>Eligibility:</strong> Participants must be residents of India and provide valid contact information.</li>
+<li><strong>Verification:</strong> MooZa.Recycle reserves the right to verify all submissions and disqualify entries that do not meet program requirements.</li>
+<li><strong>Privacy:</strong> Your personal information will be handled in accordance with our Privacy Policy.</li>
+</ul>
+</div>
+<button class="toggle-btn" onclick="document.getElementById('privacy-content').classList.toggle('active')">View Privacy Policy</button>
+<div id="privacy-content" class="toggle-content">
+<h4>Privacy Policy</h4>
+<p><strong>Data Collection & Usage:</strong> We collect personal information including name, phone number, email address, and video submissions when you participate in MooZa.Recycle.</p>
+<h4>How We Use Your Data:</h4>
+<ul>
+<li>To process your competition entries</li>
+<li>To contact winners and distribute prizes</li>
+<li>For promotional purposes on social media (with your consent)</li>
+<li>To improve our services and user experience</li>
+</ul>
+<h4>Data Protection:</h4>
+<p>We comply with India's Digital Personal Data Protection Act (DPDPA) 2023. Your data is stored securely and will not be shared with third parties without your consent.</p>
+<h4>Your Rights:</h4>
+<ul>
+<li>Access your personal data</li>
+<li>Request data correction or deletion</li>
+<li>Withdraw consent for promotional use</li>
+<li>Lodge complaints with relevant authorities</li>
+</ul>
+<h4>Data Retention:</h4>
+<p>We retain your data for the duration of the competition plus 12 months for legal compliance purposes.</p>
+<h4>Contact:</h4>
+<p>For privacy concerns, contact us at <a href="mailto:hello@mooza.recycle">hello@mooza.recycle</a></p>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="container">
+<p><strong>Contact:</strong> <a href="mailto:hello@mooza.recycle">hello@mooza.recycle</a></p>
+<div class="social-links">
+<a href="https://instagram.com/mooza.recycle" class="social-btn" target="_blank" rel="noopener noreferrer">Follow on Instagram</a>
+</div>
+<p style="font-size:.85rem;margin-top:16px">© 2025 MooZa.Recycle. All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>
 </body>
 </html>
 
